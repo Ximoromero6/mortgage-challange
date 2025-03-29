@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Mortgage calculator | Ximo Romero</title>
+  </head>
+  <body>
+    <main>
+      <div class="mortgage-calculator">
+        <div class="mortgage-calculator__form">
+          <div class="mortgage-calculator__header">
+            <h1 class="mortgage-calculator__title">Mortgage Calculator</h1>
+            <a href="#" class="mortgage-calculator__clear">Clear All</a>
+          </div>
+
+          <form class="mortgage-calculator__body">
+            <div class="mortgage-calculator__field">
+              <label for="amount" class="mortgage-calculator__label"
+                >Mortgage Amount</label
+              >
+              <div class="mortgage-calculator__input-container">
+                <i class="fi fi-br-euro icon"></i>
+                <input
+                  type="number"
+                  id="amount"
+                  class="mortgage-calculator__input"
+                />
+              </div>
+            </div>
+
+            <div
+              class="mortgage-calculator__field mortgage-calculator__field--inline"
+            >
+              <div class="mortgage-calculator__subfield">
+                <label for="term" class="mortgage-calculator__label"
+                  >Mortgage Term</label
+                >
+                <div class="mortgage-calculator__input-container">
+                  <input
+                    type="number"
+                    id="term"
+                    class="mortgage-calculator__input"
+                  />
+                  <span class="icon">years</span>
+                </div>
+              </div>
+
+              <div class="mortgage-calculator__subfield">
+                <label for="interest" class="mortgage-calculator__label"
+                  >Interest Rate</label
+                >
+                <div class="mortgage-calculator__input-container">
+                  <input
+                    type="number"
+                    id="interest"
+                    class="mortgage-calculator__input"
+                  />
+                  <i class="fi fi-br-percentage icon"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="mortgage-calculator__field">
+              <span class="mortgage-calculator__label">Mortgage Type</span>
+              <div class="mortgage-calculator__radio-group">
+                <label class="mortgage-calculator__radio">
+                  <input type="radio" name="type" />
+                  <span>Repayment</span>
+                </label>
+                <label class="mortgage-calculator__radio">
+                  <input type="radio" name="type" />
+                  <span>Interest Only</span>
+                </label>
+              </div>
+            </div>
+
+            <button type="button" class="mortgage-calculator__button">
+              <i class="fi fi-br-calculator"></i>
+              <span>Calculate Repayments</span>
+            </button>
+          </form>
+        </div>
+
+        <div class="mortgage-calculator__results">
+          <div class="mortgage-calculator__illustration">
+            <img src="assets/images/illustration-empty.svg" alt="" />
+          </div>
+          <h3 class="mortgage-calculator__result-title">Results shown here</h3>
+          <p class="mortgage-calculator__result-description">
+            Complete the form and click “calculate repayments” to see what your
+            monthly repayments would be.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="assets/js/app.js"></script>
+  </body>
+</html>
