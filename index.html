@@ -17,10 +17,12 @@
         <div class="mortgage-calculator__form">
           <div class="mortgage-calculator__header">
             <h1 class="mortgage-calculator__title">Mortgage Calculator</h1>
-            <a href="#" class="mortgage-calculator__clear">Clear All</a>
+            <a href="#" class="mortgage-calculator__clear" id="clearAllButton"
+              >Clear All</a
+            >
           </div>
 
-          <form class="mortgage-calculator__body">
+          <form class="mortgage-calculator__body" id="mortgageForm">
             <div class="mortgage-calculator__field">
               <label for="amount" class="mortgage-calculator__label"
                 >Mortgage Amount</label
@@ -70,18 +72,20 @@
             <div class="mortgage-calculator__field">
               <span class="mortgage-calculator__label">Mortgage Type</span>
               <div class="mortgage-calculator__radio-group">
-                <label class="mortgage-calculator__radio">
-                  <input type="radio" name="type" />
+                <label class="mortgage-calculator__radio" tabindex="0">
+                  <input type="radio" name="type" value="repayment" />
+                  <div class="custom-radio"></div>
                   <span>Repayment</span>
                 </label>
-                <label class="mortgage-calculator__radio">
-                  <input type="radio" name="type" />
+                <label class="mortgage-calculator__radio" tabindex="0">
+                  <input type="radio" name="type" value="interest-only" />
+                  <div class="custom-radio"></div>
                   <span>Interest Only</span>
                 </label>
               </div>
             </div>
 
-            <button type="button" class="mortgage-calculator__button">
+            <button type="submit" class="mortgage-calculator__button">
               <i class="fi fi-br-calculator"></i>
               <span>Calculate Repayments</span>
             </button>
@@ -101,6 +105,6 @@
       </div>
     </main>
 
-    <script type="module" src="assets/js/app.js"></script>
+    <script src="assets/js/app.js"></script>
   </body>
 </html>
