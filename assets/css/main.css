@@ -125,6 +125,7 @@ main {
   margin: 0 20px;
 }
 main .mortgage-calculator {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   max-width: 900px;
   background-color: hsl(0, 0%, 100%);
   border-radius: 20px;
@@ -428,6 +429,9 @@ main .mortgage-calculator__results .results-content div h3 {
 @media (max-width: 576px) {
   body {
     display: initial;
+  }
+  main .mortgage-calculator {
+    box-shadow: none;
   }
   main .mortgage-calculator .mortgage-calculator__form .mortgage-calculator__body .mortgage-calculator__field--inline,
   main .mortgage-calculator .mortgage-calculator__results .mortgage-calculator__body .mortgage-calculator__field--inline {

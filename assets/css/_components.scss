@@ -5,6 +5,7 @@ body {
 main {
   margin: 0 20px;
   .mortgage-calculator {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     max-width: 900px;
     background-color: $white;
     border-radius: 20px;
@@ -355,6 +356,7 @@ main {
   }
   main {
     .mortgage-calculator {
+      box-shadow: none;
       .mortgage-calculator__form,
       .mortgage-calculator__results {
         .mortgage-calculator__body {

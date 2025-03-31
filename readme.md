@@ -1,4 +1,4 @@
-# Frontend Mentor - Mortgage repayment calculato solution
+# Frontend Mentor - Mortgage repayment calculator solution
 
 This is a solution to the [Mortgage repayment calculator](https://www.frontendmentor.io/challenges/mortgage-repayment-calculator-Galx1LXK73).
 
